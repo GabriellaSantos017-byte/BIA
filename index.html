@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIA 2024 Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the BIA 2024 Dashboard</h1>
-    <p>This is your new dashboard for Business Intelligence Analytics.</p>
+    <header>
+        <h1>BIA 2024 Dashboard</h1>
+    </header>
+    <section class="metrics">
+        <div class="metric-card">
+            <h2>Total Users</h2>
+            <p>1,000</p>
+        </div>
+        <div class="metric-card">
+            <h2>Active Sessions</h2>
+            <p>500</p>
+        </div>
+        <div class="metric-card">
+            <h2>Conversion Rate</h2>
+            <p>5%</p>
+        </div>
+    </section>
+    <section class="process-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Process</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Process A</td>
+                    <td>Complete</td>
+                    <td><button class="expand-btn">View Details</button></td>
+                </tr>
+                <tr class="detail-panel hidden">
+                    <td colspan="3">Details about Process A...</td>
+                </tr>
+                <tr>
+                    <td>Process B</td>
+                    <td>In Progress</td>
+                    <td><button class="expand-btn">View Details</button></td>
+                </tr>
+                <tr class="detail-panel hidden">
+                    <td colspan="3">Details about Process B...</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
